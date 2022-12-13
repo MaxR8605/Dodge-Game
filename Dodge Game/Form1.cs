@@ -129,8 +129,8 @@ namespace Dodge_Game
 
             randValue = random.Next(1, 101);
 
-            // generate a ball if it is time
-            if (randValue < 31)
+            // generate an obstacle if it is time
+            if (randValue < 26)
             {
                 randValue = random.Next(10, 71);
                 size.Add(randValue);
@@ -138,7 +138,7 @@ namespace Dodge_Game
                 speed.Add(random.Next(3, 6));
 
                 randValue = random.Next(1, 101);
-                if (randValue < 71)
+                if (randValue < 67)
                 {
                     type.Add(random.Next(1, 3));
                 }
@@ -148,7 +148,7 @@ namespace Dodge_Game
                 }
             }
 
-            // remove ball if it goes off the screen
+            // remove obstacle if it goes off the screen
 
             for (int i = 0; i < obstacles.Count; i++)
             {
